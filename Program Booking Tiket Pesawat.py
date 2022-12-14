@@ -3,12 +3,12 @@ print("| LIST KEBERANGKATAN DASPRO LIGHT AIRBUS =======|")
 print("|===============================================|")
 print("| kode penerbangan | tujuan | harga tiket ======|")
 print("|===============================================|")
-print("| 101              | ENG/LDN    | Rp. 6.000.000 |")
-print("| 102              | UKR/KYV    | Rp. 5.000.000 |")
-print("| 103              | AUS/SYD    | Rp. 4.000.000 |")
-print("| 104              | SGN/SING   | Rp. 3.000.000 |")
-print("| 105              | THD/BGK    | Rp. 2.000.000 |")
-print("| 106              | PHP/MNL    | Rp. 1.000.000 |")
+print("| 101              | ENG/LDN    | Rp. 7.000.000 |")
+print("| 102              | JPN/TKY    | Rp. 5.000.000 |")
+print("| 103              | AUS/SYD    | Rp. 6.000.000 |")
+print("| 104              | SGN/SING   | Rp. 2.200.000 |")
+print("| 105              | THA/BGK    | Rp. 2.700.000 |")
+print("| 106              | PHL/MNL    | Rp. 2.500.000 |")
 print("|===============================================|")
 print("")
 nama = input("Nama Pembeli : ")
@@ -19,22 +19,22 @@ tujuan = []
 harga = []
 if jurusan == "101":
     tujuan.append("LONDON")
-    harga = 6000000
+    harga = 7000000
 elif jurusan == "102":
-    tujuan.append("KYIV")
+    tujuan.append("TOKYO")
     harga = 5000000
 elif jurusan == "103":
     tujuan.append("SYDNEY")
-    harga = 4000000
+    harga = 6000000
 elif jurusan == "104":
     tujuan.append("SINGAPURA")
-    harga = 3000000
+    harga = 2200000
 elif jurusan == "105":
     tujuan.append("BANGKOK")
-    harga = 2000000
+    harga = 2700000
 elif jurusan == "106":
     tujuan.append("MANILA")
-    harga = 1000000
+    harga = 2500000
 else :
     tujuan.append("Kode Yang Anda Masukan Salah")
 
@@ -66,7 +66,6 @@ print("Kode Negara : ", jurusan)
 print("Negara Tujuan : ", tujuan)
 print("Jumlah Beli : ", jumlah)
 print("Nomor seat: ", seat)
-
 garis()
 print("Harga tiket : Rp", harga)
 print("Potongan    : Rp", potongan)
@@ -74,6 +73,7 @@ print("PPN 10%     : Rp", pajak)
 garis()
 print("Pelunasan pembayaran tiket")
 print("Jumlah bayar : Rp", jumlah_bayar)
+pembayaran = input("Metode Pembayaran: ")
 uang = int(input("Masukan pembayaran : Rp."))
 garis()
 kembalian = uang-jumlah_bayar
